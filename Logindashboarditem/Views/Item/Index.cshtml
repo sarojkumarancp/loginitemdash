@@ -1,0 +1,18 @@
+﻿<h2>Items</h2>
+
+<a href="/Item/Create">Add Item</a>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Quantity</td>
+        </tr>
+    }
+</table>
